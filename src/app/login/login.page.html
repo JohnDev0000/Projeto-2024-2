@@ -1,26 +1,26 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>login</ion-title>
+    <ion-icon slot="end" class="ion-padding" name="close" (click)="goToHome()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <form (ngSubmit)="onLogin()">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" class="form-control" [(ngModel)]="loginData.email" name="email" required>
-          </div>
+<ion-content [fullscreen]="true">
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Login</h1>
+      <p>Entre com seu email e senha</p>
+    </div>
 
-          <div class="form-group mt-3">
-            <label for="password">Senha</label>
-            <input type="password" id="password" class="form-control" [(ngModel)]="loginData.password" name="password" required>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
-        </form>
+    <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+        </ion-item>
       </div>
     </div>
   </div>

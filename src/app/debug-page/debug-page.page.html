@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Debug-page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button [routerLink]="['/debug-page']">debug</ion-button>
+  <ion-button (click)="goToHome()">Go to home</ion-button>
+</ion-content>

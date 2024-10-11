@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RedirectsService} from "../services/redirects.service";
 
 @Component({
   selector: 'app-login',
@@ -6,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  loginData: any;
 
-  constructor() { }
+  constructor(private redirect: RedirectsService) { }
 
   ngOnInit() {
   }
 
-  onLogin() {
-    
+  goToHome() {
+    this.redirect.goToHome();
   }
+
 }

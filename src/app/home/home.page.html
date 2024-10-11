@@ -1,19 +1,77 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Help Woman - Página Principal
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Página Principal</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
 
+  <div id="container">
+    <ion-grid class="container">
+
+      <ion-row>
+        <ion-col>
+          <h1>
+            Bem vindo à página principal Help Woman
+          </h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <p>
+          As estatísticas de mortes por violência doméstica variam de acordo
+          com o país e a fonte de dados, mas infelizmente são alarmantes em muitas
+          regiões do mundo. Aqui estão alguns números que refletem
+          a gravidade do problema em algumas áreas:
+        </p><br>
+
+        <p>
+          Brasil: De acordo com o Anuário Brasileiro de Segurança Pública, em 2020, foram
+          registrados 1.350 casos de feminicídio no Brasil, uma média de quase quatro mulheres
+          assassinadas por dia.
+        </p><br>
+
+        <p>
+          Essas estatísticas são apenas uma amostra do problema global da violência doméstica
+          e feminicídio. Elas destacam a urgência de programas e políticas como o projeto
+          "Help Woman" para enfrentar essa questão e fornecer apoio às mulheres em situações
+          de vulnerabilidade.
+        </p><br>
+      </ion-row>
+
+    </ion-grid>
   </div>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab">
+        <ion-icon name="person"></ion-icon>
+        <ion-label [routerLink]="['/alunos']">Alunos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab2">
+        <ion-icon name="log-in"></ion-icon>
+        <ion-label [routerLink]="['/login']">Login</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab3">
+        <ion-icon name="settings"></ion-icon>
+        <ion-label [routerLink]="['/debug-page']">debug</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+
+
+
 </ion-content>
