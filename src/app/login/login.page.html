@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form (ngSubmit)="onLogin()">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" [(ngModel)]="loginData.email" name="email" required>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="password">Senha</label>
+            <input type="password" id="password" class="form-control" [(ngModel)]="loginData.password" name="password" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>
