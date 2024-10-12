@@ -17,4 +17,7 @@ export class LoginPage implements OnInit {
     this.redirect.goToHome();
   }
 
+  goToRegister() {
+    this.redirect.goToRegister();
+  }
 }

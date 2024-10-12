@@ -1,12 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="ion-text-center">
       Help Woman - Página Principal
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="main-content">
 
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -18,34 +18,41 @@
   <div id="container">
     <ion-grid class="container">
 
-      <ion-row>
-        <ion-col>
-          <h1>
+      <ion-row class="welcome-section">
+        <ion-col class="ion-text-center">
+          <h1 class="main-title">
             Bem vindo à página principal Help Woman
           </h1>
         </ion-col>
       </ion-row>
 
       <ion-row>
-        <p>
-          As estatísticas de mortes por violência doméstica variam de acordo
-          com o país e a fonte de dados, mas infelizmente são alarmantes em muitas
-          regiões do mundo. Aqui estão alguns números que refletem
-          a gravidade do problema em algumas áreas:
-        </p><br>
+        <ion-col size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Estatísticas de Violência Doméstica</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>
+                As estatísticas de mortes por violência doméstica variam de acordo com o país e a fonte de dados.
+              </p><br>
+              <p>
+                Brasil: Em 2020, foram registrados 1.350 casos de feminicídio, quase quatro mulheres assassinadas por dia.
+              </p><br>
+              <p>
+                Essas estatísticas são uma amostra do problema global da violência doméstica e feminicídio, destacando a urgência de programas como o "Help Woman".
+              </p><br>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
-        <p>
-          Brasil: De acordo com o Anuário Brasileiro de Segurança Pública, em 2020, foram
-          registrados 1.350 casos de feminicídio no Brasil, uma média de quase quatro mulheres
-          assassinadas por dia.
-        </p><br>
-
-        <p>
-          Essas estatísticas são apenas uma amostra do problema global da violência doméstica
-          e feminicídio. Elas destacam a urgência de programas e políticas como o projeto
-          "Help Woman" para enfrentar essa questão e fornecer apoio às mulheres em situações
-          de vulnerabilidade.
-        </p><br>
+      <ion-row class="ion-justify-content-center cta-section">
+        <ion-col size="12" class="ion-text-center">
+          <ion-button expand="block" style="--background: #8e44ad" size="large">
+            Obtenha Suporte
+          </ion-button>
+        </ion-col>
       </ion-row>
 
     </ion-grid>
@@ -66,12 +73,9 @@
 
       <ion-tab-button tab="tab3">
         <ion-icon name="settings"></ion-icon>
-        <ion-label [routerLink]="['/debug-page']">debug</ion-label>
+        <ion-label [routerLink]="['/debug-page']">Debug</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
-
-
-
 
 </ion-content>

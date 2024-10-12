@@ -3,15 +3,15 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title class="ion-text-start" style="color: white">Login</ion-title>
-    <ion-icon slot="end" class="ion-padding" name="close" (click)="goToHome()"></ion-icon>
+    <ion-title class="ion-text-start" style="color: white">Cadastro</ion-title>
+    <ion-icon slot="end" class="ion-padding" name="close" [routerLink]="['/home']"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="main-content">
   <div class="ion-text-center ion-padding">
     <ion-title>Bem Vindo</ion-title>
-    <p>Faça Login para acessar sua conta</p>
+    <p>Cadastre-se para acessar sua conta</p>
   </div>
 
   <form>
@@ -27,14 +27,7 @@
       </ion-item>
     </div>
 
-    <div class="ion-text-center">
-      <a [routerLink]="['/reset-password']">Esqueceu a senha?</a>
-    </div>
+    <ion-button expand="block" class="ion-margin-top">Confirmar</ion-button>
 
-    <ion-button expand="block" class="ion-margin-top">Entrar</ion-button>
-
-    <div class="ion-text-center ion-margin-top">
-      <p>Primeiro acesso? <a [routerLink]="['/register']">Cadastre-se</a></p>
-    </div>
   </form>
 </ion-content>

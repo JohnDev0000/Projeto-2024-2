@@ -26,4 +26,8 @@ export class RedirectsService {
     this.router.navigate(['/alunos']).then(r => console.log(r));
   }
 
+  goToRegister() {
+    this.router.navigate(['/register']).then(r => console.log(r));
+  }
+
 }

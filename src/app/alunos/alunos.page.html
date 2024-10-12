@@ -3,46 +3,63 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>alunos</ion-title>
+    <ion-title class="ion-text-start">Alunos</ion-title>
     <ion-icon slot="end" class="ion-padding" name="close" (click)="goToHome()"></ion-icon>  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="main-content">
 
 
-  <ion-card>
-    <img alt="Aluno1" src="" />
-    <ion-card-header>
-      <ion-card-title>João Pedro</ion-card-title>
-      <ion-card-subtitle>22201613</ion-card-subtitle>
-    </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-avatar>
+              <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <ion-card-title>João Pedro</ion-card-title>
+            <ion-card-subtitle>22201613</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            ADS301M - Manhã - Bonsucesso
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
-    <ion-card-content>
-      ADS301M - Manhã - Bonsucesso
-    </ion-card-content>
-  </ion-card>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-avatar>
+              <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <ion-card-title>Roberto</ion-card-title>
+            <ion-card-subtitle>22200752</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            ADS301M - Manhã - Bonsucesso
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
-  <ion-card>
-    <img alt="Aluno2" src="" />
-    <ion-card-header>
-      <ion-card-title>Roberto</ion-card-title>
-      <ion-card-subtitle>22200752</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      ADS301M - Manhã - Bonsucesso
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <img alt="Aluno3" src="" />
-    <ion-card-header>
-      <ion-card-title>Rogério</ion-card-title>
-      <ion-card-subtitle>0000000</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      ADS301M - Manhã - Bonsucesso
-    </ion-card-content>
-  </ion-card>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-avatar>
+              <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <ion-card-title>Rogério Wanderley</ion-card-title>
+            <ion-card-subtitle>22200252</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            ADS301M - Manhã - Bonsucesso
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
