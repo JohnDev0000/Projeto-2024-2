@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component } from '@angular/core';
+import {HttpService} from "../services/http.service";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+
+  constructor(public apiService: HttpService) {
+    // apiService.getNews().subscribe((results) => {
+    //   console.log(results);
+    // })
+  }
+
 
 }

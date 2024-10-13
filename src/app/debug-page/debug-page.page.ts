@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
+import {HttpService} from "../services/http.service";
 
 @Component({
   selector: 'app-debug-page',
@@ -8,9 +9,10 @@ import {Router} from "@angular/router";
 })
 export class DebugPagePage implements OnInit {
 
-
-  constructor(private router: Router) {
-
+  constructor(public apiService: HttpService, private router: Router) {
+    // apiService.getNews().subscribe((results) => {
+    //   console.log(results);
+    // })
   }
 
   ngOnInit() {

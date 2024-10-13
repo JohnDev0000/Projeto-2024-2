@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {RedirectsService} from "../services/redirects.service";
+import {HttpService} from "../services/http.service";
 
 @Component({
   selector: 'app-alunos',
@@ -8,7 +9,7 @@ import {RedirectsService} from "../services/redirects.service";
 })
 export class AlunosPage implements OnInit {
 
-  constructor(private redirectService: RedirectsService) {
+  constructor(private redirectService: RedirectsService, private apiService: HttpService) {
   }
 
   ngOnInit() {
